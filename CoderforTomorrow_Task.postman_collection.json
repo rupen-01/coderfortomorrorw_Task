@@ -1,0 +1,362 @@
+{
+	"info": {
+		"_postman_id": "d7eb8e93-8fd0-48f4-8d89-e946a6ca7199",
+		"name": "CoderforTomorrow_Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36941601",
+		"_collection_link": "https://winter-sunset-69191.postman.co/workspace/BT_Treders~f31cac33-e2ce-4ff1-a7db-b08fbf32e9fc/collection/36941601-d7eb8e93-8fd0-48f4-8d89-e946a6ca7199?action=share&source=collection_link&creator=36941601"
+	},
+	"item": [
+		{
+			"name": "service",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvZGVzZm9ydG9tb3Jyb3cuY29tIiwiaWF0IjoxNzYxOTgzOTA1LCJleHAiOjE3NjI1ODg3MDV9.yhohmXpxjL62ZTRXiJfnMZ4g1VSycL5J7L-e-yyDeXQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvZGVzZm9ydG9tb3Jyb3cuY29tIiwiaWF0IjoxNzYxOTgzOTA1LCJleHAiOjE3NjI1ODg3MDV9.yhohmXpxjL62ZTRXiJfnMZ4g1VSycL5J7L-e-yyDeXQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Haircut\",\r\n  \"type\": \"Normal\",\r\n  \"description\": \"Basic haircut\",\r\n  \"priceOptions\": [\r\n    { \"duration\": \"30 mins\", \"price\": 200, \"type\": \"Hourly\" },\r\n    { \"duration\": \"1 week package\", \"price\": 1200, \"type\": \"Weekly\" }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/category/058aaa85-af5e-4d31-a479-a85227eaa287/service",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"category",
+								"058aaa85-af5e-4d31-a479-a85227eaa287",
+								"service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvZGVzZm9ydG9tb3Jyb3cuY29tIiwiaWF0IjoxNzYxOTgzOTA1LCJleHAiOjE3NjI1ODg3MDV9.yhohmXpxjL62ZTRXiJfnMZ4g1VSycL5J7L-e-yyDeXQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Haircutl\",\r\n  \"type\": \"VIP\",\r\n  \"description\": \"Basic haircut\",\r\n  \"priceOptions\": [\r\n    { \"duration\": \"30 mins\", \"price\": 201, \"type\": \"Hourly\" },\r\n    { \"duration\": \"1 week package\", \"price\": 1201, \"type\": \"Weekly\" }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/category/058aaa85-af5e-4d31-a479-a85227eaa287/service/885fbda3-4b60-4e0c-bec9-45539aa83d56",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"category",
+								"058aaa85-af5e-4d31-a479-a85227eaa287",
+								"service",
+								"885fbda3-4b60-4e0c-bec9-45539aa83d56"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvZGVzZm9ydG9tb3Jyb3cuY29tIiwiaWF0IjoxNzYxOTgzOTA1LCJleHAiOjE3NjI1ODg3MDV9.yhohmXpxjL62ZTRXiJfnMZ4g1VSycL5J7L-e-yyDeXQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Haircutl\",\r\n  \"type\": \"VIP\",\r\n  \"description\": \"Basic haircut\",\r\n  \"priceOptions\": [\r\n    { \"duration\": \"30 mins\", \"price\": 201, \"type\": \"Hourly\" },\r\n    { \"duration\": \"1 week package\", \"price\": 1201, \"type\": \"Weekly\" }\r\n  ]\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://localhost:3000/category/058aaa85-af5e-4d31-a479-a85227eaa287/service/885fbda3-4b60-4e0c-bec9-45539aa83d56",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"category",
+								"058aaa85-af5e-4d31-a479-a85227eaa287",
+								"service",
+								"885fbda3-4b60-4e0c-bec9-45539aa83d56"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "category",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvZGVzZm9ydG9tb3Jyb3cuY29tIiwiaWF0IjoxNzYxOTgzOTA1LCJleHAiOjE3NjI1ODg3MDV9.yhohmXpxjL62ZTRXiJfnMZ4g1VSycL5J7L-e-yyDeXQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvZGVzZm9ydG9tb3Jyb3cuY29tIiwiaWF0IjoxNzYxOTgzOTA1LCJleHAiOjE3NjI1ODg3MDV9.yhohmXpxjL62ZTRXiJfnMZ4g1VSycL5J7L-e-yyDeXQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Hair\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvZGVzZm9ydG9tb3Jyb3cuY29tIiwiaWF0IjoxNzYxOTgzOTA1LCJleHAiOjE3NjI1ODg3MDV9.yhohmXpxjL62ZTRXiJfnMZ4g1VSycL5J7L-e-yyDeXQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvZGVzZm9ydG9tb3Jyb3cuY29tIiwiaWF0IjoxNzYxOTgzOTA1LCJleHAiOjE3NjI1ODg3MDV9.yhohmXpxjL62ZTRXiJfnMZ4g1VSycL5J7L-e-yyDeXQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Hair\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvZGVzZm9ydG9tb3Jyb3cuY29tIiwiaWF0IjoxNzYxOTgzOTA1LCJleHAiOjE3NjI1ODg3MDV9.yhohmXpxjL62ZTRXiJfnMZ4g1VSycL5J7L-e-yyDeXQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvZGVzZm9ydG9tb3Jyb3cuY29tIiwiaWF0IjoxNzYxOTgzOTA1LCJleHAiOjE3NjI1ODg3MDV9.yhohmXpxjL62ZTRXiJfnMZ4g1VSycL5J7L-e-yyDeXQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Balt\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/category/c5dad878-0757-44ec-b7f4-43b37bba7df3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"category",
+								"c5dad878-0757-44ec-b7f4-43b37bba7df3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvZGVzZm9ydG9tb3Jyb3cuY29tIiwiaWF0IjoxNzYxOTgzOTA1LCJleHAiOjE3NjI1ODg3MDV9.yhohmXpxjL62ZTRXiJfnMZ4g1VSycL5J7L-e-yyDeXQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGNvZGVzZm9ydG9tb3Jyb3cuY29tIiwiaWF0IjoxNzYxOTgzOTA1LCJleHAiOjE3NjI1ODg3MDV9.yhohmXpxjL62ZTRXiJfnMZ4g1VSycL5J7L-e-yyDeXQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Balt\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/category/c5dad878-0757-44ec-b7f4-43b37bba7df3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"category",
+								"c5dad878-0757-44ec-b7f4-43b37bba7df3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"email\": \"admin@codesfortomorrow.com\",\r\n   \"password\": \"Admin123!@#\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
